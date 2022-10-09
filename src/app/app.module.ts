@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OnlineshoppingComponent,
     NavbarComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
