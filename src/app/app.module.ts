@@ -8,7 +8,22 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { BagComponent } from './bag/bag.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes:Routes=[
+  {
+    path:"",component:OnlineshoppingComponent
+  },
+  {
+    path:"categories",component:CategoriesComponent
+  },
+  {
+    path:"wishlist",component:WishlistComponent
+  },
+  {
+    path:"bag",component:BagComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +35,8 @@ import { BagComponent } from './bag/bag.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
