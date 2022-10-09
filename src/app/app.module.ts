@@ -7,6 +7,7 @@ import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.compone
 import { NavbarComponent } from './navbar/navbar.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { BagComponent } from './bag/bag.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     OnlineshoppingComponent,
     NavbarComponent,
     CategoriesComponent,
-    WishlistComponent
+    WishlistComponent,
+    BagComponent
   ],
   imports: [
     BrowserModule,
